@@ -2,126 +2,130 @@
 
 [![Build](https://github.com/BartoszCichecki/LenovoLegionToolkit/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/BartoszCichecki/LenovoLegionToolkit/actions/workflows/build.yml) [![Join Discord](https://img.shields.io/discord/761178912230473768?label=Legion%20Series%20Discord)](https://discord.com/invite/legionseries)
 
-This is a utility created for Lenovo Legion 5, 5 Pro, 7 etc. laptops, that allows to change a couple of features that are only available in Lenovo Vantage.
+Это утилита, созданная для ноутбуков Lenovo Legion 5, 5 Pro, 7 и т.д., которая позволяет изменить некоторые параметры, доступные только в Lenovo Vantage.
 
-It runs no background services, uses less memory, virtually no CPU and contains no telemetry.
+Она не запускает фоновые службы, использует меньше памяти, практически не использует процессор и не содержит телеметрии.
 
-Join the Legion Series Discord: https://discord.com/invite/legionseries!
+Присоединяйтесь к Легионерам в Discord: https://discord.com/invite/legionseries!
 
 ![screenshot](assets/screenshot.png)
 
-## Disclaimer
+## Предупреждение
 
-**The tool comes with no warranty. Use at you own risk.**
+**Инструмент поставляется без гарантии. Используйте на свой страх и риск.**
 
-This is a hobby project. I want to make it available on more devices, but it will take some time, so please be patient and read through this readme carefully.
+Этот проект - хобби. Я хочу сделать его доступным на большем количестве устройств, но это займет некоторое время, поэтому, пожалуйста, наберитесь терпения и внимательно прочитайте этот readme.
 
-## Donate
+## Пожертвовать
 
-If you enjoy using the Lenovo Legion Toolkit, consider donating.
+Если вам нравится использовать Lenovo Legion Toolkit, подумайте о пожертвовании.
 
 <a href="https://www.paypal.com/donate/?hosted_button_id=22AZE2NBP3HTL"><img src="LenovoLegionToolkit.WPF/Assets/paypal_button.png" width="200" alt="PayPal Donate" /></a>
 
 <img src="LenovoLegionToolkit.WPF/Assets/paypal_qr.png" width="200" alt="PayPal QR code" />
 
-## Download
+## Загрузка
 
-You can download the installer from Releases page here: [Latest release](https://github.com/BartoszCichecki/LenovoLegionToolkit/releases/latest).
+Вы можете загрузить установщик со страницы релизов отсюда: [Последний релиз](https://github.com/BartoszCichecki/LenovoLegionToolkit/releases/latest).
 
-## Compatibility
+## Совместимость
 
-Toolkit is compatible with a lot of Lenovo Legion laptops from 2020 and 2021 running Windows 10 and 11. All testing done by me is done always on latest Windows 11 update and Legion 5 Pro 16ACH6H.
+Toolkit совместим со многими ноутбуками Lenovo Legion 2020 и 2021 годов выпуска под управлением Windows 10 и 11. Все тесты, проводимое мной, всегда выполняется с последним обновлением Windows 11 и Legion 5 Pro 16ACH6H.
 
-If you are getting an incompatible message on startup, you can check *Contribution* section down at the bottom, to see how can you help. Keep in mind, that not always I am able to make all options compatible with all hardware, since I do not have access to it.
+Если вы получаете сообщение о несовместимости при запуске, вы можете проверить раздел *Contribution* внизу, чтобы узнать, как вы можете помочь. Имейте в виду, что не всегда я могу сделать все опции совместимыми со всем оборудованием, поскольку у меня нет к нему доступа.
 
-**Note:** Y-models (Y540, Y740 etc) have limited compatibility only, meaning not all options work.
+**Примечание:** Y-модели (Y540, Y740 и т.д.) имеют ограниченную совместимость, что означает, что не все опции работают.
 
-List of supported models can be found here: [Compatibility.cs](https://github.com/BartoszCichecki/LenovoLegionToolkit/blob/master/LenovoLegionToolkit.Lib/Utils/Compatibility.cs).
+Список поддерживаемых моделей можно найти здесь: [Compatibility.cs](https://github.com/BartoszCichecki/LenovoLegionToolkit/blob/master/LenovoLegionToolkit.Lib/Utils/Compatibility.cs).
 
-## Features
+## Возможности
 
-The app allows to:
+Приложение позволяет:
 
-* Change settings like power mode, battery charging mode etc. That are available only through Vantage.
-* 4-zone RGB and White backlight keyboards support.
-* Change display refresh rate (built-in display only).
-* Deactivate discrete GPU (nVidia only).
-* View battery statistics.
-* Define Actions that will run when laptop is i.e. connected to AC power.
-* Disable/enable Lenovo Vantage and Fn Keys service without uninstalling it.
 
-##### Disable/enable Lenovo Vantage
 
-You can disable Lenovo Vantage without uninstalling it. It it especially useful, you want to keep Vantage around i.e. for checking updates.
+* Изменять настройки, такие как режим питания, режим зарядки аккумулятора и т.д., доступные только через Vantage.
+* Настраивать подсветки 4-зонных клавиатур с RGB и белой подсветкой.
+* Изменять частоту обновления дисплея (только для встроенного дисплея).
+* Отключать дискретный графический процессор (только для nVidia).
+* Смотреть статистику заряда батареи.
+* Настраивать действия, которые будут выполняться, когда ноутбук, например, подключен к сети переменного тока.
+* Отключать/включать службы Lenovo Vantage и Fn Keys, не удаляя их.
 
-You can do it from the Settings page. If you disable Vantage, it will stop and disable it's services, and disable all funky Lenovo Scheduled tasks. Once Vantage is disabled, it will no longer start any background processes on startup.
+##### Отключение/включение Lenovo Vantage
 
-If you want to open Lenovo Vantage, you need to re-enable it from the tool, otherwise it will prompt to reinstall itself.
+Вы можете отключить Lenovo Vantage, не удаляя его. Это полезно, если вы хотите, например, проверять обновления.
 
-##### Disable/enable Fn Keys service
+Вы можете сделать это на странице настроек. Если вы отключите Vantage, он остановит и отключит свои службы, а также отключит все свои стремные запланированные задачи Lenovo. Как только Vantage отключен, он больше не будет запускать какие-либо фоновые процессы при запуске компьютера.
 
-This app allows you to disable Lenovo Vantage without uninstalling it. It it especially useful, you want to keep Vantage around i.e. for checking updates.
+Если вы хотите запустить Lenovo Vantage, вам необходимо повторно включить его с помощью Toolkit-а, в противном случае он предложит переустановить себя.
 
-You can do it from the Tools menu on top. If you disable Vantage, it will stop and disable it's services, and disable all funky Lenovo Scheduled tasks. Once Vantage is disabled, it will no longer start any background processes on startup. If you want to open Lenovo Vantage, you need to re-enable it from the tool, otherwise it will prompt to reinstall itself.
+##### Отключение/включение Fn Keys service
 
-##### Deactivate discrete GPU
+Вы можете отключить Lenovo Vantage, не удаляя его. Это полезно, если вы хотите, например, проверять обновления.
 
-Sometimes discrete GPU stays active even when it should not. This can happen for example, if you work with external screen and you disconnect it - some processes will keep running on discrete GPU keeping it alive and shortening battery life.
+Вы можете сделать это на странице настроек. Если вы отключите Vantage, он остановит и отключит свои службы, а также отключит все свои стремные запланированные задачи Lenovo. Как только Vantage отключен, он больше не будет запускать какие-либо фоновые процессы при запуске компьютера.
 
-There are two ways to help the GPU deactivate:
+Если вы хотите запустить Lenovo Vantage, вам необходимо повторно включить его с помощью Toolkit-а, в противном случае он предложит переустановить себя.
 
-1. killing all processes running on dGPU (this one seems to work better),
-2. disabling dGPU for a short amount of time, which will force all processes to move to the integrated GPU.
+##### Отключение дискретного GPU
 
-Deactivate button will be enabled when dGPU is active, you have Hybrid mode enabled and there are no screens connected to dGPU. If you hover over the button, you will see the current P state of dGPU and list of processes running on it.
+Иногда дискретный GPU остается активным, даже когда он не должен этого делать. Это может произойти, например, если вы работаете с внешним экраном и отключаете его - некоторые процессы будут продолжать работать на дискретном графическом процессоре, поддерживая его работоспособность и сокращая время автономной работы.
 
-Keep in mind that some apps may not like this feature and crash, when you deactivate dGPU.
+Есть два способа отключить dGPU:
 
-##### Windows Power Plans
+1. убить все процессы, используюущие dGPU (этот вариант работает лучше всего),
+2. отключить dGPU на короткое время, что заставит все процессы перейти на встроенный графический процессор.
 
-Toolkit will automatically switch Windows power plans when Power Mode changes _and_ when Lenovo Vantage is disabled.
+Кнопка деактивации будет включена, когда dGPU активен, у вас включен гибридный режим и нет внешних мониторов, подключенных к dGPU. Если вы наведете курсор на кнопку, вы увидите текущее состояние dGPU и список процессов, запущенных на нем.
 
-On some laptops though, Lenovo Vantage never switched power plans. If you have one of the laptops where Lenovo Vantage does not change Windows power plans automatically you can override this behavior in Settings. This will allow Toolkit to always change Windows power plans, even if Lenovo Vantage is running in the background.
+Имейте в виду, что некоторым приложениям может не понравиться эта функция и они могут крашнуться, когда вы деактивируете графический процессор.
+
+##### Схемы Электропитания Windows
+
+Toolkit автоматически переключит схемы питания Windows при изменении Режима питания И при отключенном Lenovo Vantage.
+
+Однако на некоторых ноутбуках Lenovo Vantage не переключает схемы питания. Если у вас есть один из ноутбуков, на котором Lenovo Vantage не изменяет схемы питания Windows автоматически, вы можете переопределить это поведение в настройках. Это позволит Toolkit всегда изменять схемы питания Windows, даже если Lenovo Vantage работает в фоновом режиме.
 
 ##### CPU Boost Modes
 
-This allows to modify hidden setting of Windows Power Plans called *Processor performance boost mode*. It is a little bit cryptic what these options do, but the best explanation is provided here:
+Позволяет изменить скрытую настройку планов питания Windows, называемую *Режим повышения производительности процессора*. Немного непонятно, что делают эти опции, но лучшее объяснение приведено здесь:
 
 [Power and performance tuning @microsoft.com](https://docs.microsoft.com/en-us/windows-server/administration/performance-tuning/hardware/power/power-performance-tuning#processor-performance-boost-mode)
 
 [ProcessorPerformanceBoostMode @microsoft.com](https://docs.microsoft.com/en-us/dotnet/api/microsoft.windows.eventtracing.power.processorperformanceboostmode?view=trace-processor-dotnet-1.0)
 
-## Credits
+## Благодарности
 
-Special thanks to:
+Особая благодарность:
 
-* [ViRb3](https://github.com/ViRb3), for creating [Lenovo Controller](https://github.com/ViRb3/LenovoController), which was used as a base for this tool
-* [falahati](https://github.com/falahati), for creating [NvAPIWrapper](https://github.com/falahati/NvAPIWrapper) and [WindowsDisplayAPI](https://github.com/falahati/WindowsDisplayAPI)
-* [SmokelessCPU](https://github.com/SmokelessCPU) for help with 4-zone RGB keyboard support
+* [ViRb3](https://github.com/ViRb3), за создание [Lenovo Controller](https://github.com/ViRb3/LenovoController), который был использован в качестве основы для этого инструмента
+* [falahati](https://github.com/falahati), за создание [NvAPIWrapper](https://github.com/falahati/NvAPIWrapper) и [WindowsDisplayAPI](https://github.com/falahati/WindowsDisplayAPI)
+* [SmokelessCPU](https://github.com/SmokelessCPU) за помощь с 4-зонной RGB клавиатурой
 
-## Contribution
+## Вклад
 
-I appreciate any feedback that you have, so please do not hesitate to report issues. PRs are also welcome!
+Я ценю любые ваши отзывы, поэтому, пожалуйста, не стесняйтесь сообщать о проблемах. Пиар также приветствуются!
 
-#### Bugs
+#### Баги
 
-If you find any bugs in the app, please report them. It will be very helpful if you start the app with `--trace` parameter and reproduce the issue. You can find logs in `%LOCALAPPDATA%\LenovoLegionToolkit\log`. Of course attach the latest log to the issue here on GitHub.
+Если вы обнаружите какие-либо ошибки в приложении, пожалуйста, сообщите о них. Это будет очень полезно, если вы запустите приложение с параметром `--trace` и воспроизведете проблему. Вы можете найти журналы/логи в `%LOCALAPPDATA%\LenovoLegionToolkit\log`. Приложите последний журнал к issue здесь, на GitHub.
 
-Just, don't run with this parameter all the time, it creates a ***really large*** amount of logs.
+Только не запускайте этот параметр постоянно, создается *** очень большое *** количество журналов.
 
-#### Compatibility
+#### Совместимость
 
-It would be great to expand the list of compatible devices, but to do it your help is needed!
+Было бы здорово расширить список совместимых устройств, но для этого нужна ваша помощь!
 
-If you are willing to check if this app works correctly on your device that is currently unsupported, you can do it by starting the app with ``--skip-compat-check`` argument. Remember that some functions may not function properly, so keep this in mind.
+Если вы хотите проверить, правильно ли работает это приложение на вашем устройстве, которое в данный момент не поддерживается, вы можете сделать это, запустив приложение с аргументом ``--skip-compat-check``. Помните, что некоторые функции могут работать неправильно, поэтому имейте это в виду.
 
-If you do it, I would really appreciate if you create an issue here on GitHub with the results of your testing. Make sure to include following information in your issue:
+Я был бы очень признателен, если бы вы создали issue здесь, на GitHub, с результатами вашего тестирования. Обязательно включите в свой выпуск следующую информацию:
 
-1. Full model name (i.e. Legion 5 Pro 16ACH6H)
-2. List of features that are working as expected.
-3. List of features that seem to not work.
-4. List of features that crash the app.
+1. Полное имя модели (напр. Legion 5 Pro 16ACH6H)
+2. Список функций, которые работают должным образом.
+3. Список функций, которые, не работают.
+4. Список функций, которые приводят к сбою приложения.
 
-The more info you add, the better the app will get over time.
+Чем больше информации вы добавите, тем лучше приложение станет со временем.
 
-Thanks in advance!
+Заранее спасибо!
