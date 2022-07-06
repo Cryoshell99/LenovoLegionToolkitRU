@@ -13,8 +13,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Dashboard
         public PowerModeControl()
         {
             Icon = SymbolRegular.Gauge24;
-            Title = "Power Mode";
-            Subtitle = "Select performance mode.\nYou can switch mode with Fn+Q.";
+            Title = "Температурный режим";
+            Subtitle = "Выберите режим, который необходимо использовать.\nДля переключения режима можно использовать Fn+Q.";
 
             _powerModeListener.Changed += PowerModeListener_Changed;
             _powerPlanListener.Changed += PowerPlanListener_Changed;
