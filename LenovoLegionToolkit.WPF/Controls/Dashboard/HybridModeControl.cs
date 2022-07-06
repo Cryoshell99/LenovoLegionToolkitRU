@@ -17,16 +17,16 @@ namespace LenovoLegionToolkit.WPF.Controls.Dashboard
         public HybridModeControl()
         {
             Icon = SymbolRegular.LeafOne24;
-            Title = "Hybrid Mode";
-            Subtitle = "Allow switching between integrated and discrete GPU.\nRequires restart.";
+            Title = "Гибридный режим";
+            Subtitle = "Позволяет переключаться между интегрированным и дискретным GPU.\nТребуется перезапуск.";
         }
 
         protected override async Task OnStateChange(ToggleSwitch toggle, IFeature<HybridModeState> feature)
         {
             var result = await MessageBoxHelper.ShowAsync(
                 this,
-                "Restart required",
-                "Changing Hybrid Mode requires restart. Do you want to restart now?");
+                "Требуется перезапуск",
+                "Переключение гибридного режима требует перезагрузк. Вы хотите перезапустить сейчас?");
 
             if (result)
             {
