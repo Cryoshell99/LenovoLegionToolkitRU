@@ -16,7 +16,7 @@ namespace LenovoLegionToolkit.WPF.Controls.Dashboard
         {
             Icon = SymbolRegular.Keyboard24;
             Title = "Fn Lock";
-            Subtitle = "Use secondary functions of F1-F12 keys without holding Fn key.";
+            Subtitle = "Использовать функции верхнего ряда F1-F12 без клавиши Fn.";
 
             _listener.Changed += Listener_Changed;
         }
