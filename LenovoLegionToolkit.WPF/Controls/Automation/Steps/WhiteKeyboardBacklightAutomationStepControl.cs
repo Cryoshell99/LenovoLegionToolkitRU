@@ -10,8 +10,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public WhiteKeyboardBacklightAutomationStepControl(IAutomationStep<WhiteKeyboardBacklightState> step) : base(step)
         {
             Icon = SymbolRegular.Keyboard24;
-            Title = "Keyboard backlight";
-            Subtitle = "Adjust keyboard backlight brightness.";
+            Title = "Подсветка клавиатуры";
+            Subtitle = "Отрегулировать пресеты подсветки клавиатуры.";
         }
     }
 }
