@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:LenovoLegionToolkit.WPF.Windows"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="Update available"
+    Title="Доступно обновление"
     Width="600"
     Height="500"
     MinWidth="500"
@@ -42,7 +42,7 @@
                 VerticalAlignment="Center"
                 FontSize="12"
                 IsHitTestVisible="False"
-                Text="CPU Boost Modes" />
+                Text="Режимы CPU Boost" />
 
         </Grid>
 
@@ -60,7 +60,7 @@
             Grid.Row="2"
             Margin="12,12,12,12"
             HorizontalAlignment="Right"
-            Content="Learn more at microsoft.com"
+            Content="Подробнее на microsoft.com"
             Icon="Link24"
             NavigateUri="https://docs.microsoft.com/en-us/windows-server/administration/performance-tuning/hardware/power/power-performance-tuning#processor-performance-boost-mode" />
 
