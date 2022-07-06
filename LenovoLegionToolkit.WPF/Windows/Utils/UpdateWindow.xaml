@@ -7,7 +7,7 @@
     xmlns:markdig="clr-namespace:Markdig.Wpf;assembly=Markdig.Wpf"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="Update available"
+    Title="Доступно обновление"
     Width="800"
     Height="500">
     <Grid>
@@ -39,7 +39,7 @@
                 VerticalAlignment="Center"
                 FontSize="12"
                 IsHitTestVisible="False"
-                Text="Update available" />
+                Text="Доступно обновление" />
 
         </Grid>
 
@@ -59,7 +59,7 @@
                     Margin="0,0,0,24"
                     FontSize="24"
                     FontWeight="Medium"
-                    Text="What's new?" />
+                    Text="Что нового?" />
 
                 <wpfui:CardAction
                     Grid.Row="1"
@@ -70,11 +70,11 @@
                         <TextBlock
                             Margin="0,0,0,4"
                             FontWeight="Medium"
-                            Text="If you enjoy using the Lenovo Legion Toolkit, please consider donating" />
+                            Text="Если вам нравится использовать Lenovo Legion Toolkit, пожалуйста, подумайте о пожертвовании" />
                         <TextBlock
                             FontSize="11"
                             Foreground="{DynamicResource TextFillColorTertiaryBrush}"
-                            Text="You can find the donate option also on the About page." />
+                            Text="Вы также можете найти ссылку пожертвования на странице О программе." />
                     </StackPanel>
                 </wpfui:CardAction>
 
@@ -97,7 +97,7 @@
                     Margin="0,0,0,16"
                     HorizontalAlignment="Center"
                     Click="DownloadButton_Click"
-                    Content="Update"
+                    Content="Обновление"
                     IsEnabled="False" />
 
                 <Button
@@ -108,7 +108,7 @@
                     Margin="0,0,0,16"
                     HorizontalAlignment="Center"
                     Click="CancelDownloadButton_Click"
-                    Content="Cancel"
+                    Content="Отмена"
                     IsEnabled="False"
                     Visibility="Collapsed" />
             </Grid>
