@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:LenovoLegionToolkit.WPF.Windows"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="Update available"
+    Title="Доступно обновление"
     Width="600"
     Height="500"
     MinWidth="500"
@@ -42,7 +42,7 @@
                 VerticalAlignment="Center"
                 FontSize="12"
                 IsHitTestVisible="False"
-                Text="Apps" />
+                Text="Приложения" />
 
         </Grid>
 
@@ -82,7 +82,7 @@
                         Grid.Column="0"
                         Width="100"
                         Click="AddButton_Click"
-                        Content="Add" />
+                        Content="Добавить" />
 
                     <wpfui:Button
                         x:Name="_saveButton"
@@ -90,7 +90,7 @@
                         Width="100"
                         Appearance="Primary"
                         Click="SaveButton_Click"
-                        Content="Save" />
+                        Content="Сохранить" />
 
                     <wpfui:Button
                         x:Name="_cancelButton"
@@ -98,7 +98,7 @@
                         Width="100"
                         Margin="8,0,0,0"
                         Click="CancelButton_Click"
-                        Content="Cancel" />
+                        Content="Отмена" />
 
                 </Grid>
 
