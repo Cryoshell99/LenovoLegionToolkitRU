@@ -13,8 +13,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Dashboard
         public RefreshRateControl()
         {
             Icon = SymbolRegular.Laptop24;
-            Title = "Refresh rate";
-            Subtitle = "Change refresh rate of the built-in display.";
+            Title = "Частота обновления экрана";
+            Subtitle = "Изменить частоту обновления встроенного дисплея.";
 
             _listener.Changed += Listener_Changed;
         }
