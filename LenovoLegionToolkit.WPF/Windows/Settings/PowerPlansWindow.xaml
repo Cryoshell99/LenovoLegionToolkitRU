@@ -7,7 +7,7 @@
     xmlns:local="clr-namespace:LenovoLegionToolkit.WPF.Windows"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="Update available"
+    Title="Доступно обновление"
     Width="600"
     Height="420"
     MinWidth="500"
@@ -42,7 +42,7 @@
                 VerticalAlignment="Center"
                 FontSize="12"
                 IsHitTestVisible="False"
-                Text="Power Plans" />
+                Text="Схемы электропитания" />
 
         </Grid>
 
@@ -57,7 +57,7 @@
 
                     <wpfui:CardControl Margin="0,0,0,8">
                         <wpfui:CardControl.Header>
-                            <controls:CardHeaderControl Title="Quiet mode" Subtitle="Windows Power Plan to be activated when&#x0a;you switch to Quiet power mode." />
+                            <controls:CardHeaderControl Title="Тихий режим" Subtitle="Схема электропитания Windows будет активирована при &#x0a; переключении в Тихий режим." />
                         </wpfui:CardControl.Header>
                         <ComboBox
                             x:Name="_quietModeComboBox"
@@ -68,7 +68,7 @@
 
                     <wpfui:CardControl Margin="0,0,0,8">
                         <wpfui:CardControl.Header>
-                            <controls:CardHeaderControl Title="Balance mode" Subtitle="Windows Power Plan to be activated when&#x0a;you switch to Balance power mode." />
+                            <controls:CardHeaderControl Title="Сбалансированный режим" Subtitle="Схема электропитания Windows будет активирована при &#x0a; переключении в Сбалансированный режим." />
                         </wpfui:CardControl.Header>
                         <ComboBox
                             x:Name="_balanceModeComboBox"
@@ -79,7 +79,7 @@
 
                     <wpfui:CardControl Margin="0,0,0,8">
                         <wpfui:CardControl.Header>
-                            <controls:CardHeaderControl Title="Performance mode" Subtitle="Windows Power Plan to be activated when&#x0a;you switch to Performance power mode." />
+                            <controls:CardHeaderControl Title="Производительный режим" Subtitle="Схема электропитания Windows будет активирована при &#x0a; переключении в Производительный режим." />
                         </wpfui:CardControl.Header>
                         <ComboBox
                             x:Name="_performanceModeComboBox"
@@ -90,7 +90,7 @@
 
                     <wpfui:CardControl Margin="0,0,0,8">
                         <wpfui:CardControl.Header>
-                            <controls:CardHeaderControl Title="Always activate Windows Power Plan" Subtitle="Activate Power Plan even when Vantage is enabled." />
+                            <controls:CardHeaderControl Title="Всегда активировать Схему электропитания Windows" Subtitle="Активироватье Схему питания, даже если включен Vantage." />
                         </wpfui:CardControl.Header>
                         <wpfui:ToggleSwitch
                             x:Name="_activatePowerProfilesWithVantageEnabledToggle"
