@@ -11,14 +11,14 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
     {
         private readonly TextBox _scriptPath = new()
         {
-            PlaceholderText = "ExecutablePath",
+            PlaceholderText = "Путь к исполняемому файлу",
             Width = 300,
             Margin = new(0, 0, 0, 8),
         };
 
         private readonly TextBox _scriptArguments = new()
         {
-            PlaceholderText = "Arguments",
+            PlaceholderText = "Аргументы",
             Width = 300,
         };
 
@@ -27,8 +27,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public RunAutomationStepControl(RunAutomationStep step) : base(step)
         {
             Icon = SymbolRegular.WindowConsole20;
-            Title = "Run";
-            Subtitle = "Run a script or a program.\nMake sure that you script runs correctly first.";
+            Title = "Запуск";
+            Subtitle = "Запустить скрипт или программу.\nСначала убедитесь, что ваш скрипт выполняется правильно.";
 
             SizeChanged += RunAutomationStepControl_SizeChanged;
         }
