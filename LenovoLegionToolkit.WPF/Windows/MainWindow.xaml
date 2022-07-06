@@ -43,7 +43,7 @@
                 x:Name="_updateIndicator"
                 Grid.Column="1"
                 Appearance="Success"
-                Content="  Update available!  "
+                Content="  Доступно обновление!  "
                 Cursor="Hand"
                 MouseLeftButtonDown="UpdateIndicator_Click"
                 MouseRightButtonDown="UpdateIndicator_Click"
@@ -71,23 +71,23 @@
 
                     <wpfui:NavigationStore.Items>
                         <wpfui:NavigationItem
-                            Content="Dashboard"
+                            Content="Главная"
                             Icon="Home24"
                             PageTag="dashboard"
                             PageType="{x:Type pages:DashboardPage}" />
                         <wpfui:NavigationItem
                             x:Name="_keyboardItem"
-                            Content="Keyboard"
+                            Content="Клавиатура"
                             Icon="Keyboard24"
                             PageTag="keyboardBacklight"
                             PageType="{x:Type pages:KeyboardBacklightPage}" />
                         <wpfui:NavigationItem
-                            Content="Battery"
+                            Content="АКБ"
                             Icon="BatteryCheckmark24"
                             PageTag="battery"
                             PageType="{x:Type pages:BatteryPage}" />
                         <wpfui:NavigationItem
-                            Content="Actions"
+                            Content="Действия"
                             Icon="Rocket24"
                             PageTag="automation"
                             PageType="{x:Type pages:AutomationPage}" />
@@ -95,12 +95,12 @@
 
                     <wpfui:NavigationStore.Footer>
                         <wpfui:NavigationItem
-                            Content="Settings"
+                            Content="Настройки"
                             Icon="Settings24"
                             PageTag="settings"
                             PageType="{x:Type pages:SettingsPage}" />
                         <wpfui:NavigationItem
-                            Content="About"
+                            Content="О программе"
                             Icon="Info24"
                             PageTag="about"
                             PageType="{x:Type pages:AboutPage}" />
