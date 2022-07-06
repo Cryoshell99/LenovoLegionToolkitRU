@@ -9,8 +9,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public BatteryAutomationStepControl(IAutomationStep<BatteryState> step) : base(step)
         {
             Icon = SymbolRegular.BatteryCharge24;
-            Title = "Battery Mode";
-            Subtitle = "Choose how the battery is charged.";
+            Title = "Режим аккумулятора";
+            Subtitle = "Выбрать способ зарядки аккумулятора.";
         }
     }
 }
