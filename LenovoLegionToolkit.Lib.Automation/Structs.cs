@@ -14,8 +14,8 @@ namespace LenovoLegionToolkit.Lib.Automation
             get
             {
                 if (DelaySeconds == 1)
-                    return "1 second";
-                return $"{DelaySeconds} seconds";
+                    return "1 секунда";
+                return $"{DelaySeconds} секунд";
             }
         }
     }
