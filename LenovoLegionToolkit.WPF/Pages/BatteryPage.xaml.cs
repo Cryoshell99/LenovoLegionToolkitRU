@@ -110,18 +110,18 @@ namespace LenovoLegionToolkit.WPF.Pages
             if (batteryInfo.IsCharging)
             {
                 if (batteryInfo.DischargeRate > 0)
-                    return "Connected, charging...";
+                    return "Подключено, заряжается...";
                 else
-                    return $"Connected, not charging";
+                    return $"Подключено, не заряжается";
             }
             else
             {
                 if (batteryInfo.BatteryLifeRemaining < 0)
-                    return "Estimating time...";
+                    return "Предполагаемое время...";
                 else
                 {
                     var timeSpan = TimeSpan.FromSeconds(batteryInfo.BatteryLifeRemaining);
-                    return $"Estimated time remaining: {GetTimeString(timeSpan)}";
+                    return $"Предполагаемое оставшееся время: {GetTimeString(timeSpan)}";
                 }
             }
         }
@@ -132,10 +132,10 @@ namespace LenovoLegionToolkit.WPF.Pages
 
             var hours = timeSpan.Hours;
             if (hours > 0)
-                result += $"{hours} hour{(hours == 1 ? "" : "s")} ";
+                result += $"{hours} часов{(hours == 1 ? "" : "s")} ";
 
             var minutes = timeSpan.Minutes;
-            result += $"{minutes} minute{(minutes == 1 ? "" : "s")}";
+            result += $"{minutes} минут{(minutes == 1 ? "" : "s")}";
 
             return result;
         }
