@@ -4,9 +4,9 @@ namespace LenovoLegionToolkit.Lib.Automation
 {
     public enum DeactivateGPUAutomationStepState
     {
-        [Display(Name = "Kill apps")]
+        [Display(Name = "Закрыть приложения")]
         KillApps,
-        [Display(Name = "Restart GPU")]
+        [Display(Name = "Перезапустить GPU")]
         RestartGPU,
     }
 }
