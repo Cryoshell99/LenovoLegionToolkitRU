@@ -38,10 +38,10 @@ namespace LenovoLegionToolkit.WPF.Utils
         {
             ContextMenu = new ContextMenu();
 
-            var openMenuItem = new MenuItem { Header = "Open", Tag = StaticTag };
+            var openMenuItem = new MenuItem { Header = "Открыть", Tag = StaticTag };
             openMenuItem.Click += (s, e) => BringToForegroundAction?.Invoke();
 
-            var closeMenuItem = new MenuItem { Header = "Close", Tag = StaticTag };
+            var closeMenuItem = new MenuItem { Header = "Закрыть", Tag = StaticTag };
             closeMenuItem.Click += (s, e) => Application.Current.Shutdown();
 
             ContextMenu.Items.Add(openMenuItem);
@@ -72,7 +72,7 @@ namespace LenovoLegionToolkit.WPF.Utils
 
                 var items = new List<Control>
                 {
-                    new MenuItem { Header = "Quick Actions", Tag = QuickActionsTag, IsEnabled = false }
+                    new MenuItem { Header = "Быстрые Действия", Tag = QuickActionsTag, IsEnabled = false }
                 };
 
                 foreach (var menuPipeline in pipelines.Where(p => p.Trigger is null))
@@ -80,7 +80,7 @@ namespace LenovoLegionToolkit.WPF.Utils
                     var item = new MenuItem
                     {
                         SymbolIcon = SymbolRegular.Play24,
-                        Header = menuPipeline.Name ?? "Unnamed",
+                        Header = menuPipeline.Name ?? "Без названия",
                         Tag = QuickActionsTag,
                     };
                     item.Click += async (s, e) => await _automationProcessor.RunNowAsync(menuPipeline);
