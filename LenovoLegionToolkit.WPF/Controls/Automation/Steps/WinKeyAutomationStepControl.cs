@@ -9,8 +9,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public WinKeyAutomationStepControl(IAutomationStep<WinKeyState> step) : base(step)
         {
             Icon = SymbolRegular.Keyboard24;
-            Title = "Windows Key";
-            Subtitle = "Enabled or disable Windows key.";
+            Title = "Клавиша Windows";
+            Subtitle = "Включить или отключить клавишу Windows.";
         }
     }
 }
