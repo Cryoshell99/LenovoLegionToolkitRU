@@ -147,7 +147,7 @@ namespace LenovoLegionToolkit
             if (Log.Instance.IsTraceEnabled)
                 Log.Instance.Trace($"***** *** Unhandled exception ***** ***\n{errorText}");
 
-            MessageBox.Show(errorText, "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show(errorText, "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
             Shutdown(-1);
         }
 
@@ -164,7 +164,7 @@ namespace LenovoLegionToolkit
             if (Log.Instance.IsTraceEnabled)
                 Log.Instance.Trace($"Incompatible system detected, shutting down... [Vendor={mi.Vendor}, Model={mi.Model}]");
 
-            MessageBox.Show($"This application is not compatible with:\n\n{mi.Vendor} {mi.Model}.", "Unsupported device", MessageBoxButton.OK, MessageBoxImage.Error);
+            MessageBox.Show($"Это приложение несовместимо с:\n\n{mi.Vendor} {mi.Model}.", "Unsupported device", MessageBoxButton.OK, MessageBoxImage.Error);
             Shutdown(-1);
         }
 
