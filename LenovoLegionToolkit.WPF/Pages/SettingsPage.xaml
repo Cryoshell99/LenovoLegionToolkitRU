@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="Settings"
+    Title="Настройки"
     d:DesignHeight="450"
     d:DesignWidth="800"
     Style="{StaticResource UiPageScrollable}"
@@ -19,11 +19,11 @@
             Margin="0,16,0,24"
             FontSize="24"
             FontWeight="Medium"
-            Text="Settings" />
+            Text="Настройки" />
 
         <wpfui:CardControl Margin="0,0,0,8" Icon="DarkTheme24">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Theme" Subtitle="Set light theme, dark theme or follow system settings." />
+                <controls:CardHeaderControl Title="Тема" Subtitle="Установите светлую, темную или системную тему." />
             </wpfui:CardControl.Header>
             <ComboBox
                 x:Name="_themeComboBox"
@@ -35,15 +35,15 @@
 
         <controls:ColorCardControl
             x:Name="_accentColor"
-            Title="Accent color"
+            Title="Акцентный цвет"
             Margin="0,0,0,24"
             Icon="Color24"
             OnChanged="AccentColorControl_OnChanged"
-            Subtitle="Change the accent color of the app." />
+            Subtitle="Измените акцентный цвет приложения." />
 
         <wpfui:CardControl Margin="0,0,0,8">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Autorun" Subtitle="Start minimized to tray when you log in to Windows." />
+                <controls:CardHeaderControl Title="Автозвпуск" Subtitle="Запуск в трее при входе в Windows." />
             </wpfui:CardControl.Header>
             <wpfui:ToggleSwitch
                 x:Name="_autorunToggle"
@@ -54,7 +54,7 @@
 
         <wpfui:CardControl Margin="0,0,0,24">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Minimize on close" Subtitle="Always minimize to tray. Close with right click on tray icon." />
+                <controls:CardHeaderControl Title="Свернуть при закрытии" Subtitle="Всегда сворачивать в трей. Закройте, щёлкнув правой кнопкой мыши по значку в трее." />
             </wpfui:CardControl.Header>
             <wpfui:ToggleSwitch
                 x:Name="_minimizeOnCloseToggle"
@@ -65,7 +65,7 @@
 
         <wpfui:CardControl x:Name="_vantageCard" Margin="0,0,0,8">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Disable Lenovo Vantage" Subtitle="Disable Lenovo Vantage and it's service without uninstalling it.&#x0a;Restart is recommended after changing this option." />
+                <controls:CardHeaderControl Title="Отключить Lenovo Vantage" Subtitle="Отключить Lenovo Vantage и его сервисы, не удаляя его.&#x0a;После изменения этого параметра рекомендуется перезагрузить компьютер." />
             </wpfui:CardControl.Header>
             <wpfui:ToggleSwitch
                 x:Name="_vantageToggle"
@@ -76,7 +76,7 @@
 
         <wpfui:CardControl x:Name="_fnKeysCard" Margin="0,0,0,8">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Disable Lenovo Fn Keys" Subtitle="Disable Lenovo Fn Keys and it's service without uninstalling it.&#x0a;If disabled, this app will handle Fn shortcuts.&#x0a;Restart is recommended after changing this option." />
+                <controls:CardHeaderControl Title="Отключить Lenovo Fn Keys" Subtitle="Отключить Lenovo Fn Keys и его сервисы, не удаляя его.&#x0;Если он отключен, Toolkit будет обрабатывать сочетания клавиш.&#x0a; После изменения этого параметра рекомендуется перезагрузить компьютер." />
             </wpfui:CardControl.Header>
             <wpfui:ToggleSwitch
                 x:Name="_fnKeysToggle"
@@ -90,23 +90,23 @@
             Margin="0,16,0,0"
             FontSize="24"
             FontWeight="Medium"
-            Text="Advanced" />
+            Text="Дополнительно" />
 
         <TextBlock
             Grid.Row="0"
             Margin="0,8,0,24"
             FontSize="12"
-            Text="Do not change options below unless you really know what you are doing." />
+            Text="Настройки для опытных пользователей." />
 
         <wpfui:CardAction Margin="0,0,0,8" Click="PowerPlans_Click">
             <wpfui:CardAction.Content>
-                <controls:CardHeaderControl Title="Power plans" />
+                <controls:CardHeaderControl Title="Схемы электропитания" />
             </wpfui:CardAction.Content>
         </wpfui:CardAction>
 
         <wpfui:CardAction Margin="0,0,0,8" Click="CPUBoostModes_Click">
             <wpfui:CardAction.Content>
-                <controls:CardHeaderControl Title="CPU Boost Modes" />
+                <controls:CardHeaderControl Title="Режимы CPU Boost" />
             </wpfui:CardAction.Content>
         </wpfui:CardAction>
 
