@@ -8,7 +8,7 @@ namespace LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers
 {
     public class ProcessesStopRunningAutomationPipelineTrigger : IAutomationPipelineTrigger, IProcessesAutomationPipelineTrigger
     {
-        public string DisplayName => "When app closes";
+        public string DisplayName => "Когда приложение закрывается";
 
         public ProcessInfo[] Processes { get; }
 
