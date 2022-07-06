@@ -5,7 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="About"
+    Title="О программе"
     d:DesignHeight="450"
     d:DesignWidth="800"
     Style="{StaticResource UiPageScrollable}"
@@ -16,7 +16,7 @@
             Margin="0,16,0,24"
             FontSize="24"
             FontWeight="Medium"
-            Text="About" />
+            Text="О программе" />
 
         <TextBlock
             Padding="0,0,0,8"
@@ -26,24 +26,24 @@
         <TextBlock
             x:Name="_version"
             Padding="0,0,0,8"
-            Text="Version: " />
+            Text="Версия: " />
         <TextBlock
             x:Name="_build"
             Padding="0,0,0,16"
-            Text="Build: " />
+            Text="Сборка: " />
         <TextBlock x:Name="_copyright" />
 
         <TextBlock
             Padding="0,32,0,8"
             FontSize="14"
             FontWeight="Medium"
-            Text="Links" />
+            Text="Ссылки" />
         <wpfui:Hyperlink
-            Content="Project website on GitHub"
+            Content="Страница проекта на GitHub"
             Icon="Link24"
             NavigateUri="https://github.com/BartoszCichecki/LenovoLegionToolkit" />
         <wpfui:Hyperlink
-            Content="Latest release on GitHub"
+            Content="Последние релизы на GitHub"
             Icon="Link24"
             NavigateUri="https://github.com/BartoszCichecki/LenovoLegionToolkit/releases/latest" />
 
@@ -51,7 +51,7 @@
             Padding="0,32,0,8"
             FontSize="14"
             FontWeight="Medium"
-            Text="Donate" />
+            Text="Пожертвовать" />
         <Image
             Width="250"
             Margin="0,8,0,0"
@@ -74,7 +74,7 @@
             Padding="0,24,0,8"
             FontSize="14"
             FontWeight="Medium"
-            Text="3rd party libraries" />
+            Text="Сторонние библиотеки" />
 
         <Grid>
             <Grid.ColumnDefinitions>
