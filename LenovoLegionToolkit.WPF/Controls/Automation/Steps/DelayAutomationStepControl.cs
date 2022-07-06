@@ -9,8 +9,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public DelayAutomationStepControl(IAutomationStep<Delay> step) : base(step)
         {
             Icon = SymbolRegular.Clock24;
-            Title = "Delay";
-            Subtitle = "Add delay before running next step.";
+            Title = "Задержка";
+            Subtitle = "Добавить задержку перед следующим шагом.";
         }
     }
 }
