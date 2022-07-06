@@ -12,8 +12,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Dashboard
         public TouchpadLockControl()
         {
             Icon = SymbolRegular.Tablet24;
-            Title = "Touchpad Lock";
-            Subtitle = "Disable touchpad.";
+            Title = "Блокировка сенсорной панели";
+            Subtitle = "Отключить или включить тачпад.";
         }
     }
 }
