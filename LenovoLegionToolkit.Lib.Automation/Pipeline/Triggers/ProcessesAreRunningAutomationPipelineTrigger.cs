@@ -7,7 +7,7 @@ namespace LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers
 {
     public class ProcessesAreRunningAutomationPipelineTrigger : IAutomationPipelineTrigger, IProcessesAutomationPipelineTrigger
     {
-        public string DisplayName => "When app is running";
+        public string DisplayName => "Когда приложение запущено";
 
         public ProcessInfo[] Processes { get; }
 
