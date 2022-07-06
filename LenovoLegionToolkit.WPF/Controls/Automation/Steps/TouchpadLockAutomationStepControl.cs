@@ -9,8 +9,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public TouchpadLockAutomationStepControl(IAutomationStep<TouchpadLockState> step) : base(step)
         {
             Icon = SymbolRegular.Tablet24;
-            Title = "Touchpad Lock";
-            Subtitle = "Disable touchpad.";
+            Title = "Блокировка сенсорной панели";
+            Subtitle = "Отключить или включить тачпад.";
         }
     }
 }
