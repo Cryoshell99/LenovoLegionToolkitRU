@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:wpfui="http://schemas.lepo.co/wpfui/2022/xaml"
-    Title="Battery"
+    Title="АКБ"
     d:DesignHeight="450"
     d:DesignWidth="800"
     Style="{StaticResource UiPageScrollable}"
@@ -17,7 +17,7 @@
             Margin="0,16,0,24"
             FontSize="24"
             FontWeight="Medium"
-            Text="Battery" />
+            Text="Аккумулятор" />
 
         <StackPanel Margin="0,0,0,24" Orientation="Horizontal">
             <wpfui:SymbolIcon
@@ -45,21 +45,21 @@
             Margin="0,0,0,24"
             Click="BatteryTemperatureCardControl_Click">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Battery temperature" Subtitle="Current temperature of the battery." />
+                <controls:CardHeaderControl Title="Температура аккумулятора" Subtitle="Текущая температура АКБ." />
             </wpfui:CardControl.Header>
             <TextBlock x:Name="_batteryTemperatureText" FontSize="14" />
         </wpfui:CardControl>
 
         <wpfui:CardControl Margin="0,0,0,8">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Discharge rate" Subtitle="Rate at which battery is charged (+), or discharged (-)." />
+                <controls:CardHeaderControl Title="Скорость разряда" Subtitle="Скорость, с которой аккумулятор заряжается (+) или разряжается (-)." />
             </wpfui:CardControl.Header>
             <TextBlock x:Name="_batteryDischargeRateText" FontSize="14" />
         </wpfui:CardControl>
 
         <wpfui:CardControl Margin="0,0,0,8">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Current capacity" Subtitle="Current battery capacity." />
+                <controls:CardHeaderControl Title="Текущая ёмкость" Subtitle="Текущая ёмкость аккумулятора." />
             </wpfui:CardControl.Header>
             <TextBlock x:Name="_batteryCapacityText" FontSize="14" />
         </wpfui:CardControl>
@@ -67,27 +67,27 @@
         <wpfui:CardControl Margin="0,0,0,8">
             <TextBlock x:Name="_batteryFullChargeCapacityText" FontSize="14" />
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Full charge capacity" Subtitle="Battery capacity when fully charged." />
+                <controls:CardHeaderControl Title="Полная зарядная ёмкость" Subtitle="Ёмкость аккумулятора при полной зарядке." />
             </wpfui:CardControl.Header>
         </wpfui:CardControl>
 
         <wpfui:CardControl Margin="0,0,0,24">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Design capacity" Subtitle="Battery capacity as designed." />
+                <controls:CardHeaderControl Title="Заявленная ёмкость" Subtitle="Емкость аккумулятора с завода." />
             </wpfui:CardControl.Header>
             <TextBlock x:Name="_batteryDesignCapacityText" FontSize="14" />
         </wpfui:CardControl>
 
         <wpfui:CardControl Margin="0,0,0,8">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Cycle count" Subtitle="Number of charge/discharge cycles." />
+                <controls:CardHeaderControl Title="Циклы зарядки" Subtitle="Количество циклов зарядки/разрядки." />
             </wpfui:CardControl.Header>
             <TextBlock x:Name="_batteryCycleCountText" FontSize="14" />
         </wpfui:CardControl>
 
         <wpfui:CardControl Margin="0,0,0,8">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Manufacture date" Subtitle="When was the battery manufactured." />
+                <controls:CardHeaderControl Title="Дата изготовления" Subtitle="Когда был изготовлен аккумулятор." />
             </wpfui:CardControl.Header>
             <TextBlock x:Name="_batteryManufactureDateText" FontSize="14" />
         </wpfui:CardControl>
