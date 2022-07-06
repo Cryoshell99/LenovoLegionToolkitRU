@@ -114,10 +114,10 @@ namespace LenovoLegionToolkit.WPF.Windows.Settings
 
             if (state.Value && !await MessageBoxHelper.ShowAsync(
                 this,
-                "Are you sure?",
-                "Enabling this option when Lenovo Vantage is running and it changes power plans on your laptop might result in unexpected behavior.",
-                "Yes, enable",
-                "No, do not enable"))
+                "Вы уверены?",
+                "Включение этой опции при запуске Lenovo Vantage и изменении схемы питания на вашем ноутбуке может привести к неожиданному поведению.",
+                "Да, включить",
+                "Нет, не включать"))
             {
                 _activatePowerProfilesWithVantageEnabledToggle.IsChecked = false;
                 return;
