@@ -14,7 +14,7 @@ namespace LenovoLegionToolkit.WPF.Pages
             {
                 var version = Assembly.GetEntryAssembly()?.GetName()?.Version;
                 if (version == new System.Version(0, 0, 1, 0))
-                    return "BETA";
+                    return "БЕТА";
                 return version?.ToString(3) ?? "";
             }
         }
