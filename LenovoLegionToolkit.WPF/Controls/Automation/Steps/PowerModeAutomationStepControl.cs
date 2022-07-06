@@ -9,8 +9,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public PowerModeAutomationStepControl(IAutomationStep<PowerModeState> step) : base(step)
         {
             Icon = SymbolRegular.Gauge24;
-            Title = "Power Mode";
-            Subtitle = "Select performance mode.";
+            Title = "Температурный режим";
+            Subtitle = "Выберите режим, который необходимо использовать.";
         }
     }
 }
