@@ -57,7 +57,7 @@ namespace LenovoLegionToolkit.WPF.Pages
             try
             {
                 _saveButton.IsEnabled = false;
-                _saveButton.Content = "Saving...";
+                _saveButton.Content = "Сохранение...";
 
                 var automaticPipelines = _automaticPipelinesStackPanel.Children.ToArray()
                     .OfType<AutomationPipelineControl>()
@@ -76,11 +76,11 @@ namespace LenovoLegionToolkit.WPF.Pages
                 await _automationProcessor.ReloadPipelinesAsync(pipelines);
                 await RefreshAsync();
 
-                await SnackbarHelper.ShowAsync("Saved", "Changes were saved successfully!");
+                await SnackbarHelper.ShowAsync("Сохранено", "Изменения успешно сохранены!");
             }
             finally
             {
-                _saveButton.Content = "Save";
+                _saveButton.Content = "Сохранить";
                 _saveButton.IsEnabled = true;
             }
         }
@@ -89,7 +89,7 @@ namespace LenovoLegionToolkit.WPF.Pages
         {
             await RefreshAsync();
 
-            await SnackbarHelper.ShowAsync("Reverted", "All changes reverted!");
+            await SnackbarHelper.ShowAsync("Сбросить", "Все изменения сброшены!");
         }
 
         private async Task RefreshAsync()
@@ -166,21 +166,21 @@ namespace LenovoLegionToolkit.WPF.Pages
             var index = stackPanel.Children.IndexOf(control);
             var maxIndex = stackPanel.Children.Count - 1;
 
-            var moveUpMenuItem = new MenuItem { SymbolIcon = SymbolRegular.ArrowUp24, Header = "Move up" };
+            var moveUpMenuItem = new MenuItem { SymbolIcon = SymbolRegular.ArrowUp24, Header = "Вверх" };
             if (index > 0)
                 moveUpMenuItem.Click += (s, e) => MovePipeline(control, stackPanel, index - 1);
             else
                 moveUpMenuItem.IsEnabled = false;
             menuItems.Add(moveUpMenuItem);
 
-            var moveDownMenuItem = new MenuItem { SymbolIcon = SymbolRegular.ArrowDown24, Header = "Move down" };
+            var moveDownMenuItem = new MenuItem { SymbolIcon = SymbolRegular.ArrowDown24, Header = "Вниз" };
             if (index < maxIndex)
                 moveDownMenuItem.Click += (s, e) => MovePipeline(control, stackPanel, index + 1);
             else
                 moveDownMenuItem.IsEnabled = false;
             menuItems.Add(moveDownMenuItem);
 
-            var renameMenuItem = new MenuItem { SymbolIcon = SymbolRegular.Edit24, Header = "Rename" };
+            var renameMenuItem = new MenuItem { SymbolIcon = SymbolRegular.Edit24, Header = "Переименовать" };
             renameMenuItem.Click += async (s, e) => await RenamePipelineAsync(control);
             menuItems.Add(renameMenuItem);
 
@@ -209,7 +209,7 @@ namespace LenovoLegionToolkit.WPF.Pages
 
         private async Task AddManualPipelineAsync()
         {
-            var newName = await MessageBoxHelper.ShowInputAsync(this, "Add new", "Name...");
+            var newName = await MessageBoxHelper.ShowInputAsync(this, "Добавить новое", "Название...");
             if (string.IsNullOrWhiteSpace(newName))
                 return;
 
@@ -224,7 +224,7 @@ namespace LenovoLegionToolkit.WPF.Pages
         private async Task RenamePipelineAsync(AutomationPipelineControl control)
         {
             var name = control.GetName();
-            var newName = await MessageBoxHelper.ShowInputAsync(this, "Rename", "Name...", name, allowEmpty: true);
+            var newName = await MessageBoxHelper.ShowInputAsync(this, "Переименовать", "Название...", name, allowEmpty: true);
             control.SetName(newName);
         }
 
