@@ -40,7 +40,7 @@
             Margin="0,0,8,24"
             Icon="Warning24">
             <wpfui:CardControl.Header>
-                <controls:CardHeaderControl Title="Unavailable" Subtitle="Keyboard backlight cannot be adjusted, when Vantage and/or it's services are running." />
+                <controls:CardHeaderControl Title="Недоступно" Subtitle="Подсветка клавиатуры не может быть отрегулирована, когда Vantage и/или его службы запущены." />
             </wpfui:CardControl.Header>
         </wpfui:CardControl>
 
@@ -51,7 +51,7 @@
             Margin="0,0,8,24"
             HorizontalAlignment="Stretch"
             Click="PresetButton_Click"
-            Content="Off"
+            Content="ВЫКЛ"
             Tag="{x:Static lib:RGBKeyboardBacklightPreset.Off}" />
         <wpfui:Button
             x:Name="_preset1Button"
@@ -60,7 +60,7 @@
             Margin="0,0,8,24"
             HorizontalAlignment="Stretch"
             Click="PresetButton_Click"
-            Content="Preset 1"
+            Content="Профиль 1"
             Tag="{x:Static lib:RGBKeyboardBacklightPreset.One}" />
         <wpfui:Button
             x:Name="_preset2Button"
@@ -69,7 +69,7 @@
             Margin="0,0,8,24"
             HorizontalAlignment="Stretch"
             Click="PresetButton_Click"
-            Content="Preset 2"
+            Content="Профиль 2"
             Tag="{x:Static lib:RGBKeyboardBacklightPreset.Two}" />
         <wpfui:Button
             x:Name="_preset3Button"
@@ -78,7 +78,7 @@
             Margin="0,0,8,24"
             HorizontalAlignment="Stretch"
             Click="PresetButton_Click"
-            Content="Preset 3"
+            Content="Профиль 3"
             Tag="{x:Static lib:RGBKeyboardBacklightPreset.Three}" />
 
         <kb:RGBKeyboardBrightnessCardControl
@@ -105,7 +105,7 @@
 
         <controls:ColorCardControl
             x:Name="_zone1Control"
-            Title="Zone 1"
+            Title="Зона 1"
             Grid.Row="5"
             Grid.Column="0"
             Margin="0,0,8,8"
@@ -124,7 +124,7 @@
 
         <controls:ColorCardControl
             x:Name="_zone2Control"
-            Title="Zone 2"
+            Title="Зона 2"
             Grid.Row="5"
             Grid.Column="1"
             Margin="0,0,8,8"
@@ -143,7 +143,7 @@
 
         <controls:ColorCardControl
             x:Name="_zone3Control"
-            Title="Zone 3"
+            Title="Зона 3"
             Grid.Row="5"
             Grid.Column="2"
             Margin="0,0,8,8"
@@ -162,7 +162,7 @@
 
         <controls:ColorCardControl
             x:Name="_zone4Control"
-            Title="Zone 4"
+            Title="Зона 4"
             Grid.Row="5"
             Grid.Column="3"
             Margin="0,0,8,8"
