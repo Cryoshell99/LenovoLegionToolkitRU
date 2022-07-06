@@ -7,7 +7,7 @@ namespace LenovoLegionToolkit.Lib.Automation.Pipeline.Triggers
     public class ACAdapterConnectedAutomationPipelineTrigger : IAutomationPipelineTrigger, IPowerAutomationPipelineTrigger, IDisallowDuplicatesAutomationPipelineTrigger
     {
         [JsonIgnore]
-        public string DisplayName => "When AC adapter is connected";
+        public string DisplayName => "Когда адаптер питания подключен";
 
         public bool IsSatisfied(object? context) => Power.IsPowerAdapterConnected();
 
