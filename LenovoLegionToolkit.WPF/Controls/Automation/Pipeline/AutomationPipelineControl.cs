@@ -51,29 +51,29 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Pipeline
         private readonly CheckBox _isExclusiveCheckBox = new()
         {
             HorizontalAlignment = HorizontalAlignment.Left,
-            Content = "Exclusive",
-            ToolTip = "Do not execute further actions when this action runs.",
+            Content = "Привилегированный",
+            ToolTip = "Не выполнять дальнейших шагов при выполнении этого действия.",
             Width = 100,
             Margin = new(0, 0, 8, 0),
         };
 
         private readonly Button _runNowButton = new()
         {
-            Content = "Run now",
+            Content = "Запустить сейчас",
             Width = 100,
             Margin = new(0, 0, 8, 0),
         };
 
         private readonly Button _addStepButton = new()
         {
-            Content = "Add step",
+            Content = "Добавить шаг",
             Width = 100,
             Margin = new(0, 0, 8, 0),
         };
 
         private readonly Button _deletePipelineButton = new()
         {
-            Content = "Delete",
+            Content = "Удалить",
             Width = 100,
         };
 
@@ -169,19 +169,19 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Pipeline
             try
             {
                 _runNowButton.IsEnabled = false;
-                _runNowButton.Content = "Running...";
+                _runNowButton.Content = "Запускается...";
                 var pipeline = CreateAutomationPipeline();
                 await _automationProcessor.RunNowAsync(pipeline);
 
-                await SnackbarHelper.ShowAsync("Success", "Action ran successfully!");
+                await SnackbarHelper.ShowAsync("Успех", "Действие запущено успешно!");
             }
             catch (Exception ex)
             {
-                await SnackbarHelper.ShowAsync("Run failed", ex.Message);
+                await SnackbarHelper.ShowAsync("Неудача", ex.Message);
             }
             finally
             {
-                _runNowButton.Content = "Run now";
+                _runNowButton.Content = "Запустить сейчас";
                 _runNowButton.IsEnabled = true;
             }
         }
@@ -223,7 +223,7 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Pipeline
             {
                 var button = new Button
                 {
-                    Content = "Configure",
+                    Content = "Настроить",
                     Margin = new(0, 0, 16, 0),
                     Width = 120,
                 };
@@ -343,7 +343,7 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Pipeline
             var moveUpMenuItem = new MenuItem
             {
                 SymbolIcon = SymbolRegular.ArrowUp24,
-                Header = "Move up"
+                Header = "Вверх"
             };
             if (index > 0)
                 moveUpMenuItem.Click += (s, e) => MoveStep(control, index - 1);
@@ -354,7 +354,7 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Pipeline
             var moveDownMenuItem = new MenuItem
             {
                 SymbolIcon = SymbolRegular.ArrowDown24,
-                Header = "Move down"
+                Header = "Вниз"
             };
             if (index < maxIndex)
                 moveDownMenuItem.Click += (s, e) => MoveStep(control, index + 1);
