@@ -12,8 +12,8 @@ namespace LenovoLegionToolkit.WPF.Controls.Automation.Steps
         public RefreshRateAutomationStepControl(IAutomationStep<RefreshRate> step) : base(step)
         {
             Icon = SymbolRegular.Laptop24;
-            Title = "Refresh rate";
-            Subtitle = "Change refresh rate of the built-in display.\n\nWARNING: This action will not run correctly,\nif internal display is off.";
+            Title = "Частота обновления экрана";
+            Subtitle = "Изменить частоту обновления встроенного дисплея.\n\nВНИМАНИЕ: Это действие не будет выполняться корректно,\nесли внутренний дисплей выключен.";
 
             _listener.Changed += Listener_Changed;
         }
